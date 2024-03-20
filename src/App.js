@@ -75,8 +75,8 @@ function App() {
 
   return (
     <>
-      <div>
-        <h4>가위바위보 게임</h4>
+      <div className="main">
+        <h1>가위바위보 게임</h1>
       </div>
       <div className="main">
         <Box title="You" item={userSelect} result={result}></Box>

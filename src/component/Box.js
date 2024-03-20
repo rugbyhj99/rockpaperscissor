@@ -4,6 +4,7 @@ import React from 'react'
 const Box = (props) => {
     console.log("porps", props)
     console.log("props.result", props.result);
+    
     let result;
     if (props.title === "Computer" && props.result !== "tie" & props.result !== ""){
         result = props.result === "win" ? "lose" : "win";
@@ -15,7 +16,9 @@ const Box = (props) => {
         <div className={"box " + result}>
             <h1>{props.title}</h1>
             <img className="item-img" src={props.item && props.item.img}></img>
-            <h2>{result}</h2>
+            <h2>
+                {props.title} {result}
+            </h2>
         </div>    
   )
 }
