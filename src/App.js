@@ -52,8 +52,6 @@ function App() {
     // }
     
   }
-
-
   const randomChoice= () => {
    
     // 알고리즘방식
@@ -77,6 +75,9 @@ function App() {
 
   return (
     <>
+      <div>
+        <h4>가위바위보 게임</h4>
+      </div>
       <div className="main">
         <Box title="You" item={userSelect} result={result}></Box>
         <Box title="Computer" item={computerSelect} result={result}></Box>           
