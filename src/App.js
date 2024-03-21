@@ -31,10 +31,7 @@ function App() {
 
   const judgement = (user, computer) =>{
     console.log("user", user, "computer", computer)
-    // user == computer tie
-    // user == rock, computer == scissor user win
-    // user == rock, computer == paper user lose
-    // user == sissor, computer == 
+    
     if (user.name == computer.name){
       return "tie";
     } else if (user.name == "Rock")
@@ -42,15 +39,7 @@ function App() {
     else if (user.name == "Scissors")
       return computer.name == "Paper" ? "win" : "lose";
     else if (user.name == "Paper")
-      return computer.name == "Rock" ? "win" : "lose";
-    // { 
-    //   if(computer.name == "scissors"){
-    //     return "win"
-    //   } else {
-    //     return "lose"
-    //   }
-    // }
-    
+      return computer.name == "Rock" ? "win" : "lose";    
   }
   const randomChoice= () => {
    
@@ -59,7 +48,7 @@ function App() {
     // 객체에 키값만 뽑아서 어레이로 만들어주는 함수이다
     console.log("item Array", itemArray);
     
-     // Math.random() 은 0에서 1까지의 숫자중 아무거나 들고온다
+    // Math.random() 은 0에서 1까지의 숫자중 아무거나 들고온다
     // Math.floor는 소수점 아래의 숫자는 다버리고 정수만 가져온다
     let randomItem = Math.floor(Math.random() * itemArray.length);
     console.log("random value", randomItem);
